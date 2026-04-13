@@ -20,11 +20,7 @@
     <hr>
     <p>
       <a href="<%= root_path %>">Thread List</a>
-      <% if session[:admin] %>
-        | <%= button_to "Admin Logout", admin_logout_path, method: :delete %>
-      <% else %>
-        | <a href="<%= admin_login_path %>">Admin</a>
-      <% end %>
+
     </p>
   </body>
 </html>

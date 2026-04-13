@@ -25,12 +25,7 @@
       <p><strong>Subject:</strong> <%= raw post.subject %></p>
     <% end %>
     <div><%= raw smilize(post.body) %></div>
-    <% if session[:admin] %>
-      <p>
-        <a href="<%= admin_edit_post_path(post) %>">Edit</a> |
-        <%= button_to "Delete", admin_destroy_post_path(post), method: :delete, data: { confirm: "Are you sure?" } %>
-      </p>
-    <% end %>
+
   </div>
 <% end %>
 
