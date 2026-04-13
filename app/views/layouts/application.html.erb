@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag @current_theme, "data-turbo-track": "reload" %>
   </head>
 
   <body>
+    <div class="logobar">
+      <% theme_image = Dir.glob(Rails.root.join("public", "theme_images", "#{@current_theme}.*")).first %>
+      <% if theme_image %>
+        <% theme_image = Pathname.new(theme_image).relative_path_from(Rails.root.join("public")).to_s %>
+        <img src="/<%= theme_image %>" class="border">
+      <% end %>
+    </div>
+
+    <div class="bar">
+      <%= form_with url: update_theme_path, method: :post, local: true do %>
+        <label for="theme">Theme:</label>
+        <select name="theme" id="theme" onchange="this.form.submit();">
+          <% ThemesController::AVAILABLE_THEMES.each do |theme| %>
+            <option value="<%= theme %>" <%= "selected" if theme == @current_theme %>><%= theme.capitalize %></option>
+          <% end %>
+        </select>
+        <noscript><input type="submit" value="Apply"></noscript>
+      <% end %>
+    </div>
+
     <% if flash[:notice] %>
       <p><strong><%= flash[:notice] %></strong></p>
     <% end %>
@@ -20,7 +41,6 @@
     <hr>
     <p>
       <a href="<%= root_path %>">Thread List</a>
-
     </p>
   </body>
 </html>
