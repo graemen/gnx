@@ -1,0 +1,491 @@
+h1 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #888
+}
+
+h2 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #888888
+}
+
+h3 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #888
+}
+
+h4 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff
+}
+
+h5 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 10px;
+    color: #888; 
+}
+
+h6 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 10px;
+    color: #ffffff; 
+}
+
+body {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+p {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+}
+
+textarea {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    background-color: #ffffff;
+    border-color: #888888;
+    border-style: solid
+}
+    
+form {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    margin-left: auto;
+    color: #000000
+
+}
+
+img {
+    border-style: none
+}
+
+img.border {
+    border-style: solid;
+    border-width: 1px.>
+}
+
+div.navbar {
+    background-color: #888888; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 5px;
+    width: 100%
+}
+
+div.logobar {
+    background-color: #ffffff;
+    border-top: 3px dashed #cc0000;
+    border-left: 3px dashed #cc0000;
+    border-right: 3px dashed #cc0000;
+    border-bottom: none;
+    
+    padding: 5px;
+    height: 160px;
+    width: 100%
+}
+
+div.bar {
+    background-color: #ffffff; 
+    border: none;
+    border-top: 1px solid #000000;
+    color: #ffffff;
+    padding: 5px;
+    text-align: right;
+    font-size: 8px;
+    width: 100%
+}
+
+div.skin {
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 1px;
+    text-align: right;
+    font-size: 10px;
+    width: 100%
+}
+
+
+div.full {
+    margin: auto;
+    background-color: #ffffff; 
+    border-style: none;
+    width: 600px 
+}
+
+div.back {
+    margin: auto;
+    background-color: #ffffff; 
+    border-style: none;
+    width: 100% 
+}
+
+table.reply {
+    margin: auto;
+    background-color: #cccccc; 
+    border-style: none
+}
+
+table.half {
+    margin: auto;
+    background-color: #ffffff; 
+    border-style: none;
+    width: 250px 
+}
+
+div.nav {
+    width: 100%;
+    background-color: #888888; 
+    margin: auto;
+    text-align: right;
+    vertical-align: middle;
+    width: 75px
+}
+
+table.users {
+    margin: auto;
+    background-color: #ffffff; 
+    border-style: none;
+    width: 500px;
+    text-align: center
+}
+
+td.center {
+    text-align: center
+}
+
+td.half {
+    background-color: #ffffff; 
+    border-style: none;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top
+}
+
+td.sitemap {
+    background-color: #ffffff; 
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #dddddd;
+    vertical-align: top;
+    text-align: left
+}
+
+
+td.quartgrey {
+    background-color: #dddddd; 
+    border-style: none;
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 2px
+}
+
+td.img {
+    background-color: #ffffff; 
+    border-style: none;
+    text-align: center
+}
+
+td.user {
+    background-color: #ffffff; 
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+div.msg {
+    background-color: #ff0000; 
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+td.right {
+    background-color: #ffffff; 
+    border-style: none;
+    width: 100px;
+    text-align: right
+}
+
+div.subhead {
+    background-color: #dddddd;
+    border-style: none;
+    border-color: #000000;
+    border-size: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+
+td.subhead {
+    background-color: #dddddd;
+    border-style: none;
+    border-color: #000000;
+    border-size: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+
+div.header {
+    border-top-style: solid;
+    border-top-color: #ff0000;
+    border-top-size: 1px;
+    border-left-style: solid;
+    border-left-color: #ff0000;
+    border-left-size: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+
+td.grey {
+    background-color: #dddddd;
+    font-weight: bold;
+    font-size: 12;
+    text-align: right;
+    padding: 2px
+}
+
+
+a:link {
+    color: #0a2b50; 
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:active {
+    color: #ff0000; 
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:visited {
+    color: #0a2b50; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover {
+    color: #ff0000; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:link.nav {
+    background-color: #ffffff; 
+    color: #0a2b50; 
+    font-size: 10px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:active.nav {
+    background-color: #0a2b50;
+    color: #ff0000; 
+    font-size: 10px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:visited.nav {
+    background-color: #ffffff; 
+    color: #0a2b50; 
+    font-size: 10px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover.nav {
+    background-color: #0a2b50; 
+    color: #ff0000; 
+    font-size: 10px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+/* Button styles */
+.button, input[type="submit"], button {
+    background-color: #ccc;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.button:hover, input[type="submit"]:hover, button:hover {
+    background-color: #0a2b50;
+    color: #ff0000;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    background-color: #ffffff;  
+    color: #0a2b50;
+    
+}
+
+.pagination span {
+    background-color: #fff;  
+}
+
+.pagination .current {
+    background-color: #fff;
+    color: #cc0000;
+}
+
+.pagination a:hover {
+    background-color: #0a2b50;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Display options */
+.display-options {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.option {
+    color: #000000;
+    padding: 3px 5px;
+}
+
+.option.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Minimal horizontal rules */
+hr {
+    background-color: #ffffff;
+    border: 3px dashed #224466;
+    padding: 5px;
+    width: 100%
+}
+
+.thread-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 1px;
+    border: 1px dashed #cc0000;
+    border-bottom: 2px solid #0a2b50
+  }
+ 
+  .new-thread-container {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #888888;
+  }
+  
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #888888;
+  }
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #888888;
+  }
+  
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #888888;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .date{
+    color: #666666;
+  }
+
+  .reply-info{
+    color: #666666;
+  }
+
+  .post-content, 
+.reply-content {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+ 
+.post-content, 
+.reply-content {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Post backgrounds */
+.post, .main-post, .reply, .reply-post {
+  background-color: #ffffff;
+  border: 1px dashed #000000;
+  border-bottom: none;
+  color: #000000;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  }
+
+.root-post {
+  border-left: 1px dashed #000000;
+}
+
+.reply-post {
+  border-left: 1px dashed #888888;
+  margin-left: 20px;
+}

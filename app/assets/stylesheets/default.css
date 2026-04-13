@@ -1,0 +1,233 @@
+/* Default theme for Grixnix - Minimalist Black on White */
+
+/* Base elements */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Verdana, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Thread item background */
+.thread-item {
+    background-color: #ffffff;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 15px;
+    border-left: 0px solid #000;
+    border-radius: 0px
+}
+
+/* Post backgrounds */
+.post, .main-post, .reply, .reply-post {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.empty-state {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Helvetica, sans-serif;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: #080;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #080;
+}
+
+p {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+textarea, input, select {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 4px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+img.border {
+    border: 1px solid #000000;
+}
+
+div.bar {
+    background-color: #cccccc; 
+    border: none;
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    font-size: 8px;
+    margin: 10px;
+    width: 40%
+}
+
+div.logobar {
+    background-color: #fff;
+    border: none;
+    height: 100px;
+    width: 100%
+}
+
+div.header, div.subhead {
+    border-bottom: 1px solid #000000;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+div.full {
+    margin: auto;
+    max-width: 800px;
+}
+
+table {
+    background-color: #ffffff;
+    color: #000000;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Link styles */
+a {
+    color: #080;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #080;
+}
+
+/* Button styles */
+.button, input[type="submit"], button {
+    background-color: #ccc;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.button:hover, input[type="submit"]:hover, button:hover {
+    background-color: #008;
+    color: #ffffff;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    background-color: #fff;  
+    color: #080;
+    
+}
+
+.pagination span {
+    background-color: #fff;  
+}
+
+.pagination .current {
+    background-color: #fff;
+    color: #080;
+}
+
+.pagination a:hover {
+    background-color: #008;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Display options */
+.display-options {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.option {
+    color: #000000;
+    padding: 3px 5px;
+}
+
+.option.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Minimal horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 15px 0;
+}
+
+.new-thread-container {
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .date{
+    color: #666666;
+  }
+
+  .reply-info{
+    color: #666666;
+  }
+  
+  .post-content, 
+.reply-content {
+  color: #000000;
+  margin-bottom: 20px;
+}

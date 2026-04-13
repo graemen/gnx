@@ -1,0 +1,479 @@
+/* Soviet theme for Grixnix - Dark theme example */
+
+/* Base elements */
+body {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+}
+
+/* Thread item background */
+.thread-item {
+    background-color: #1a1a1a;
+    border-left-color: #cc0000;
+    color: #f0f0f0;
+}
+
+
+
+/* Header elements */
+h1 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #cc0000
+}
+
+h2 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #cc0000
+}
+
+h3 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #cc0000
+}
+
+h4 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff
+}
+
+h5 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 10px;
+    color: #cc0000; 
+}
+
+h6 {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 10px;
+    color: #cc0000; 
+}
+
+/* Links */
+a:link {
+    color: #cc0000; 
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:active {
+    color: #cc0000; 
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:visited {
+    color: #cc0000; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover {
+    color: #ff0000; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:link.nav {
+    background-color: #d30d0c; 
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:active.nav {
+    background-color: #d30d0c;
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:visited.nav {
+    background-color: #d30d0c; 
+    color: #ffffff; 
+    font-size: 12px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover.nav {
+    background-color: #d30d0c; 
+    color: #000000; 
+    font-size: 12px; 
+    font-family: Verdana, Helvetica; 
+    text-decoration: none;
+    font-weight: bold
+}
+
+
+
+/* Form elements */
+input, textarea, select {
+    background-color: #333333;
+    color: #f0f0f0;
+    border: 1px solid #666666;
+}
+
+textarea {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    background-color: #333333;
+    border-style: solid
+}
+
+form {
+    font-family: Verdana,Helvetica,sans-serif; 
+    font-size: 12px;
+    margin-left: auto;
+    color: #f0f0f0;
+    background-color: transparent;
+}
+
+/* Button styling for Soviet theme */
+.button, input[type="submit"] {
+  background-color: #cc0000;
+  color: #ffffff;
+}
+
+/* Custom classes from original CSS */
+div.bar {
+    background-color: #222222;
+    color: #f0f0f0;
+    border: none;-color: #ffffff;
+    padding: 5px;
+    text-align: right;
+    font-size: 8px;
+    width: 100%
+}
+
+div.skin {
+    background-color: #222222;
+    color: #f0f0f0;
+    padding: 1px;
+    text-align: right;
+    font-size: 10px;
+    padding: 5px;
+    width: 100%
+}
+
+div.header {
+    border-top-style: solid;
+    border-top-color: #d30d0c;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #d30d0c;
+    border-bottom-width: 2px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    background-color: #222222;
+    color: #f0f0f0;
+    border-color: #cc0000;
+}
+
+table.reply {
+    margin: auto;
+    background-color: #1a1a1a; 
+    border-style: none
+}
+
+table.half {
+    margin: auto;
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 250px 
+}
+
+table.users {
+    margin: auto;
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 500px;
+    text-align: center
+}
+
+td.center {
+    text-align: center
+}
+
+td.half {
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top
+}
+
+td.sitemap {
+    background-color: #1a1a1a; 
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #dddddd;
+    vertical-align: top;
+    text-align: left
+}
+
+td.quartgrey {
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 2px
+}
+
+td.img {
+    background-color: #1a1a1a; 
+    border-style: none;
+    text-align: center
+}
+
+td.user {
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+td.right {
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 100px;
+    text-align: right
+}
+
+td.grey {
+    background-color: #1a1a1a;
+    font-weight: bold;
+    font-size: 12;
+    text-align: right;
+    padding: 2px
+}
+
+div.msg {
+    background-color: #ff0000; 
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+div.subhead {
+    background-color: #1a1a1a;
+    border-style: none;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+td.subhead {
+    background-color: #1a1a1a;
+    border-style: none;
+    border-color: #000000;
+    border-width: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+div.full {
+    margin: auto;
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 600px 
+}
+
+div.back {
+    margin: auto;
+    background-color: #1a1a1a; 
+    border-style: none;
+    width: 100% 
+}
+
+div.navbar {
+    background-color: #d30d0c; 
+    border-style: none;
+    border-width: 1px;
+    border-color: #000000;
+    padding: 5px;
+    text-align: center;
+    width: 100%
+}
+
+div.logobar {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #d30d0c;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+    padding: 5px;
+    height: 190px;
+    width: 100%
+}
+
+div.nav {
+    width: 100%;
+    background-color: #d30d0c; 
+    margin: auto;
+    text-align: right;
+    vertical-align: middle;
+    width: 75px
+}
+
+img {
+    border-style: none
+    
+}
+
+img.border {
+    border-style: solid;
+    border-width: 1px
+}
+
+
+/* Button styles */
+.button, input[type="submit"], button {
+    background-color: #000000;
+    color: #cc0000;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.button:hover, input[type="submit"]:hover, button:hover {
+    background-color: #cc0000;
+    color: #000;
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    background-color: #000;  
+    color: #cc0000;
+}
+
+.pagination span {
+    background-color: #000;  
+}
+
+.pagination .current {
+    background-color: #000;
+    color: #fff;
+}
+
+.pagination a:hover {
+    background-color: #cc0000;
+    color: #000;
+}
+
+
+/* Display options */
+.display-options {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.option {
+    color: #000000;
+    padding: 3px 5px;
+}
+
+.option.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Minimal horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 15px 0;
+}
+
+.thread-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 0px
+  }
+
+  .new-thread-container {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #888888;
+  }
+  
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #888888;
+  }
+
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #888888;
+  }
+  
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #888888;
+  }
+
+  .username {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .date{
+    color: #ccc;
+  }
+
+  .reply-info{
+    color: #ccc;
+  }
