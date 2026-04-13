@@ -58,7 +58,14 @@ module HtmlFilterHelper
         # Remove disallowed attributes
         allowed_attrs = HtmlFilterHelper::ALLOWED_CONTENT_ATTRIBUTES[node.name.downcase] || []
         node.attribute_nodes.each do |attr|
-          attr.remove unless allowed_attrs.include?(attr.name.downcase)
+          if allowed_attrs.include?(attr.name.downcase)
+            # Block dangerous URI schemes in href/src
+            if %w[href src].include?(attr.name.downcase)
+              attr.remove if attr.value =~ /\A\s*(javascript|data|vbscript):/i
+            end
+          else
+            attr.remove
+          end
         end
       end
       CONTINUE

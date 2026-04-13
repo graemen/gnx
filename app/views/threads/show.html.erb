@@ -17,9 +17,6 @@
     <p>
       <strong><%= post.username.presence || "Anonymous" %></strong>
       — <%= post.created_at.strftime("%d %b %Y %H:%M") %>
-      <% if post.ip_address.present? %>
-        (IP: <%= post.ip_address %>)
-      <% end %>
     </p>
     <% if post.subject.present? %>
       <p><strong>Subject:</strong> <%= raw post.subject %></p>

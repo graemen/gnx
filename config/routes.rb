@@ -9,12 +9,12 @@ Rails.application.routes.draw do
     end
   end
 
-  get  "admin/login", to: "admin#login"
-  post "admin/authenticate", to: "admin#authenticate"
-  delete "admin/logout", to: "admin#logout"
-  get  "admin/posts/:id/edit", to: "admin#edit", as: :admin_edit_post
-  patch "admin/posts/:id", to: "admin#update", as: :admin_update_post
-  delete "admin/posts/:id", to: "admin#destroy", as: :admin_destroy_post
+  #get  "admin/login", to: "admin#login"
+  #post "admin/authenticate", to: "admin#authenticate"
+  #delete "admin/logout", to: "admin#logout"
+  #get  "admin/posts/:id/edit", to: "admin#edit", as: :admin_edit_post
+  #patch "admin/posts/:id", to: "admin#update", as: :admin_update_post
+  #delete "admin/posts/:id", to: "admin#destroy", as: :admin_destroy_post
 
   get "up" => "rails/health#show", as: :rails_health_check
 end
