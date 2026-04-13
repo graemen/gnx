@@ -1,0 +1,31 @@
+<h1>New Thread</h1>
+
+<% if @preview_body.present? %>
+  <div style="border: 2px dashed #666; padding: 10px; margin-bottom: 20px;">
+    <h3>Preview</h3>
+    <p><strong>Name:</strong> <%= @post.username.presence || "Anonymous" %></p>
+    <% if @preview_subject.present? %>
+      <p><strong>Subject:</strong> <%= raw @preview_subject %></p>
+    <% end %>
+    <div><%= raw @preview_body %></div>
+  </div>
+<% end %>
+
+<%= form_with model: @post, url: threads_path, method: :post, local: true do |f| %>
+  <p>
+    <label>Name:</label><br>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <label>Subject:</label><br>
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <label>Message:</label><br>
+    <%= f.text_area :body, rows: 10, cols: 60 %>
+  </p>
+  <p>
+    <button type="submit" name="preview" value="1">Preview</button>
+    <%= f.submit "Post Thread" %>
+  </p>
+<% end %>

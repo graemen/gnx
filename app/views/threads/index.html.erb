@@ -1,0 +1,27 @@
+<h1>GrixNix Message Board</h1>
+
+<p><a href="<%= new_thread_path %>">Start New Thread</a></p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Subject</th>
+    <th>Author</th>
+    <th>Replies</th>
+    <th>Last Post</th>
+  </tr>
+  <% @threads.each do |thread| %>
+    <% first_post = @first_posts[thread.id] %>
+    <tr>
+      <td>
+        <a href="<%= thread_path(thread) %>">
+          <%= first_post ? first_post.subject.presence || "(no subject)" : "(no subject)" %>
+        </a>
+      </td>
+      <td><%= first_post ? (first_post.username.presence || "Anonymous") : "Anonymous" %></td>
+      <td><%= (@reply_counts[thread.id] || 1) - 1 %></td>
+      <td><%= thread.last_post_at&.strftime("%d %b %Y %H:%M") %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= paginate @threads %>

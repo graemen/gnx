@@ -1,0 +1,58 @@
+<% first_post = @thread.posts.order(:created_at).first %>
+<h2><%= first_post&.subject.presence || "(no subject)" %></h2>
+
+<% if @preview_body.present? %>
+  <div style="border: 2px dashed #666; padding: 10px; margin-bottom: 20px;">
+    <h3>Preview</h3>
+    <p><strong>Name:</strong> <%= @post.username.presence || "Anonymous" %></p>
+    <% if @preview_subject.present? %>
+      <p><strong>Subject:</strong> <%= raw @preview_subject %></p>
+    <% end %>
+    <div><%= raw @preview_body %></div>
+  </div>
+<% end %>
+
+<% @posts.each do |post| %>
+  <div style="border: 1px solid #ccc; padding: 8px; margin-bottom: 8px;">
+    <p>
+      <strong><%= post.username.presence || "Anonymous" %></strong>
+      — <%= post.created_at.strftime("%d %b %Y %H:%M") %>
+      <% if post.ip_address.present? %>
+        (IP: <%= post.ip_address %>)
+      <% end %>
+    </p>
+    <% if post.subject.present? %>
+      <p><strong>Subject:</strong> <%= raw post.subject %></p>
+    <% end %>
+    <div><%= raw smilize(post.body) %></div>
+    <% if session[:admin] %>
+      <p>
+        <a href="<%= admin_edit_post_path(post) %>">Edit</a> |
+        <%= button_to "Delete", admin_destroy_post_path(post), method: :delete, data: { confirm: "Are you sure?" } %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
+
+<%= paginate @posts %>
+
+<hr>
+<h3>Reply</h3>
+<%= form_with model: @post || Post.new, url: thread_posts_path(@thread), method: :post, local: true do |f| %>
+  <p>
+    <label>Name:</label><br>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <label>Subject:</label><br>
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <label>Message:</label><br>
+    <%= f.text_area :body, rows: 10, cols: 60 %>
+  </p>
+  <p>
+    <button type="submit" name="preview" value="1">Preview</button>
+    <%= f.submit "Post Reply" %>
+  </p>
+<% end %>

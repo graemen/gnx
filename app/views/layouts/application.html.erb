@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "GrixNix Message Board" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  </head>
+
+  <body>
+    <% if flash[:notice] %>
+      <p><strong><%= flash[:notice] %></strong></p>
+    <% end %>
+    <% if flash[:alert] %>
+      <p><strong><%= flash[:alert] %></strong></p>
+    <% end %>
+
+    <%= yield %>
+
+    <hr>
+    <p>
+      <a href="<%= root_path %>">Thread List</a>
+      <% if session[:admin] %>
+        | <%= button_to "Admin Logout", admin_logout_path, method: :delete %>
+      <% else %>
+        | <a href="<%= admin_login_path %>">Admin</a>
+      <% end %>
+    </p>
+  </body>
+</html>

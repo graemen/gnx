@@ -1,0 +1,21 @@
+<h1>Edit Post</h1>
+
+<%= form_with model: @post, url: admin_update_post_path(@post), method: :patch, local: true do |f| %>
+  <p>
+    <label>Name:</label><br>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <label>Subject:</label><br>
+    <%= f.text_field :subject %>
+  </p>
+  <p>
+    <label>Message:</label><br>
+    <%= f.text_area :body, rows: 10, cols: 60 %>
+  </p>
+  <p>
+    <%= f.submit "Update Post" %>
+  </p>
+<% end %>
+
+<p><a href="<%= thread_path(@post.thread_id) %>">Back to thread</a></p>
