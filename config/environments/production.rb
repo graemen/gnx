@@ -60,5 +60,5 @@ Rails.application.configure do
   config.active_record.attributes_for_inspect = [ :id ]
 
   # Disable host authorization for now (configure for your domain in production)
-  config.hosts.clear
-end
+  config.hosts << "www.grixnix.com"
+  end
