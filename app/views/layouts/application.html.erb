@@ -8,7 +8,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Grixnix">
     <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon-dark-192.png">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag @current_theme, "data-turbo-track": "reload" %>
@@ -51,7 +52,7 @@
     <% end %>
 
 
-    <h1><a href="<%= root_path %>">All Threads</a></h1>
+    <h1><a href="<%= root_path %>">[ Home ]</a></h1>
     <%= yield %>
 
     <br/>
