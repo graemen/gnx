@@ -20,6 +20,7 @@ class PostsController < ApplicationController
     @post.body = sanitize_body(@post.body)
 
     if @post.save
+      @thread.update!(last_post_at: Time.current)
       redirect_to thread_path(@thread, page: @thread.posts.count / 9 + 1), notice: "Reply posted."
     else
       @posts = @thread.posts.order(:created_at).page(params[:page]).per(9)
