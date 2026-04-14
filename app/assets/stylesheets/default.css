@@ -103,8 +103,12 @@ div.bar {
 div.logobar {
     background-color: #fff;
     border: none;
-    height: 100px;
-    width: 100%
+    padding: 5px;
+    overflow: hidden;
+}
+
+div.logobar img {
+    max-height: 100px;
 }
 
 div.header, div.subhead {
