@@ -1,0 +1,6 @@
+#!/bin/sh
+git pull
+sudo systemctl stop grixnix
+rails assets:precompile
+rm public/assets/.manifest.json
+sudo systemctl start grixnix
