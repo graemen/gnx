@@ -2,5 +2,6 @@
 git pull
 sudo systemctl stop grixnix
 rails assets:precompile
+echo "deleting manifest..."
 rm public/assets/.manifest.json
 sudo systemctl start grixnix
