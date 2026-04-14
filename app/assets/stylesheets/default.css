@@ -1,155 +1,364 @@
-/* Default theme for Grixnix - Minimalist Black on White */
-
-/* Base elements */
-body {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Verdana, Helvetica, sans-serif;
-    line-height: 1.5;
-}
-
-/* Thread item background */
-.thread-item {
-    background-color: #ffffff;
-    border-bottom: 1px solid #000000;
-    margin-bottom: 15px;
-    border-left: 0px solid #000;
-    border-radius: 0px
-}
-
-/* Post backgrounds */
-.post, .main-post, .reply, .reply-post {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-}
-
-.empty-state {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, Helvetica, sans-serif;
-    color: #000000;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 h1 {
-    font-size: 16px;
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
     font-weight: bold;
+    text-align: left;
+    color: #ffffff
 }
 
 h2 {
-    font-size: 14px;
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
     font-weight: bold;
+    text-align: left;
+    color: #008800
 }
 
 h3 {
+    font-family: Verdana,Helvetica,sans-serif;
     font-size: 12px;
     font-weight: bold;
+    text-align: left;
+    color: #ffffff
 }
 
-a:link, a:visited {
-    color: #080;
-    text-decoration: none;
-    font-weight: normal;
+h4 {
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #080;
+h5 {
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+h6 {
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+body {
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 p {
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: Verdana,Helvetica,sans-serif;
     font-size: 12px;
-    color: #000000;
+    color: #ffffff
 }
 
-textarea, input, select {
-    font-family: Verdana, Helvetica, sans-serif;
+textarea {
+    font-family: Verdana,Helvetica,sans-serif;
     font-size: 12px;
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #000000;
-    padding: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid
 }
 
 form {
-    margin: 0;
-    padding: 0;
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-left: auto;
+    background-color: #000000;
+    color: #ffffff
 }
 
+input {
+    font-family: Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    margin-left: auto;
+    background-color: #000000;
+    color: #ffffff
+}
+
+
+
 img {
-    border: none;
+    border-style: none
 }
 
 img.border {
-    border: 1px solid #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffff00
 }
 
-div.bar {
-    background-color: #cccccc; 
-    border: none;
-    color: #ffffff;
+div.navbar {
+    background-color: #008800;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #008800;
     padding: 1px;
-    text-align: center;
-    font-size: 8px;
-    margin: 10px;
-    width: 40%
+    width: 100%;
+    margin-right: 8px;
+    text-align: center
+
 }
 
 div.logobar {
-    background-color: #fff;
-    border: none;
+    background-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
     padding: 5px;
-    overflow: hidden;
+    text-align: center;
+    font-size: 8px;
+    height: 100px;
+    width: 100%
 }
 
-div.logobar img {
-    max-height: 100px;
+div.bar {
+    background-color: #000000;
+    border-top: 1px solid #888888;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    color: #ffffff;
+    padding: 1px;
+    text-align: right;
+    font-size: 8px;
+    margin-right: 8px;
+    width: 100%
 }
 
-div.header, div.subhead {
-    border-bottom: 1px solid #000000;
-    padding: 5px 0;
-    margin-bottom: 10px;
+div.skin {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1px;
+    text-align: right;
+    font-size: 10px;
+    width: 100%
 }
+
+div.header {
+    background-color: #000000;
+    border-style: solid;
+    border-color: #008800;
+    border-width: 1px;
+    padding: 1px;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    color: #ffffff
+}
+
+div.subhead {
+    border-bottom-style: solid;
+    border-bottom-color: #008800;
+    border-bottom-size: 1px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+
 
 div.full {
     margin: auto;
-    max-width: 800px;
+    background-color: #000000;
+    border-style: none;
+    width: 800px
+}
+
+div.back {
+    margin: auto;
+    background-color: #000000;
+    border-style: none;
+    width: 100%
 }
 
 table {
-    background-color: #ffffff;
-    color: #000000;
-    border-collapse: collapse;
+    background-color: #000000;
+    color: #ffffff;
+
 }
 
-td, th {
-    padding: 5px;
-    text-align: left;
+table.reply {
+    margin: auto;
+    background-color: #000000;
+    border-style: none
+}
+
+table.half {
+    margin: auto;
+    background-color: #000000;
+    border-style: none;
+    width: 250px
+}
+
+div.nav {
+    width: 100%;
+    background-color: #000000;
+    margin: auto;
+    text-align: right;
+    vertical-align: middle;
+    width: 75px
+}
+
+table.users {
+    margin: auto;
+    background-color: #000000;
+    border-style: none;
+    width: 500px;
+    text-align: center
+}
+
+td.center {
+    text-align: center
+}
+
+td.half {
+    background-color: #000000;
+    border-style: none;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top
+}
+
+td.sitemap {
+    background-color: #000000;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #666666;
     vertical-align: top;
+    text-align: left
 }
 
-/* Link styles */
-a {
-    color: #080;
+
+td.quartgrey {
+    background-color: #444444;
+    border-style: none;
+    width: 25%;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 2px
+}
+
+td.img {
+    background-color: #000000;
+    border-style: none;
+    text-align: center
+}
+
+td.user {
+    background-color: #000000;
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+div.msg {
+    background-color: #008800;
+    border-style: none;
+    width: 100px;
+    text-align: center
+}
+
+td.right {
+    background-color: #000000;
+    border-style: none;
+    width: 100px;
+    text-align: right
+}
+
+td.subhead {
+    border-bottom-style: solid;
+    border-bottom-color: #008800;
+    border-bottom-width: 1px;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12;
+    text-align: left;
+    width: 100%
+}
+
+
+td.grey {
+    background-color: #444444;
+    font-weight: bold;
+    font-size: 12;
+    text-align: right;
+    padding: 2px
+}
+
+
+a:link {
+    color: #008800;
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:active {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none
+}
+
+a:visited {
+    color: #008800;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bold
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #080;
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold
 }
 
+a:link.nav {
+    background-color: #008800;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Verdana, Helvetica;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:active.nav {
+    background-color: #008800;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Verdana, Helvetica;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:visited.nav {
+    background-color: #008800;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Verdana, Helvetica;
+    text-decoration: none;
+    font-weight: bold
+}
+
+a:hover.nav {
+    background-color: #ffffff;
+    color: #008800;
+    font-size: 10px;
+    font-family: Verdana, Helvetica;
+    text-decoration: none;
+    font-weight: bold
+}
 /* Button styles */
 .button, input[type="submit"], button {
-    background-color: #ccc;
-    color: #ffffff;
+    background-color: #000000;
+    color: #008800;
     border: none;
     padding: 6px 12px;
     cursor: pointer;
@@ -158,8 +367,8 @@ a:hover {
 }
 
 .button:hover, input[type="submit"]:hover, button:hover {
-    background-color: #008;
-    color: #ffffff;
+    background-color: #008800;
+    color: #fff;
 }
 
 /* Pagination styles */
@@ -168,24 +377,21 @@ a:hover {
 }
 
 .pagination a {
-    background-color: #fff;  
-    color: #080;
-    
+    background-color: #000;
+    color: #008800
 }
 
 .pagination span {
-    background-color: #fff;  
+    background-color: #000;
 }
 
 .pagination .current {
-    background-color: #fff;
-    color: #080;
+    background-color: #000;
+    color: #fff;
 }
 
 .pagination a:hover {
-    background-color: #008;
-    color: #fff;
-    text-decoration: underline;
+    background-color: #008800;
 }
 
 
@@ -212,26 +418,59 @@ hr {
     margin: 15px 0;
 }
 
-.new-thread-container {
+.thread-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #000000;
+    border-bottom: 1px solid #ccc;
+    border-left: 4px solid #008800;
+    border-right: 0px solid #000000;
+    border-top: 0px solid #000;
+    border-radius: 0px
+  }
+
+  .new-thread-container {
     padding: 20px;
     border-radius: 4px;
   }
 
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #008800;
+  }
+
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #008800;
+  }
+
+  /* Thread meta text */
+  .thread-meta,
+  .post-meta,
+  .reply-meta {
+      color: #fff;
+  }
+
+  /* Action buttons and links */
+  .post-actions a, .post-actions button,
+  .reply-actions a, .reply-actions button,
+  .thread-actions a {
+      color: #fff;
+  }
+
   .username {
     font-weight: bold;
-    color: #000;
+    color: #fff;
   }
 
   .date{
-    color: #666666;
+    color: #ccc;
   }
 
   .reply-info{
-    color: #666666;
+    color: #ccc;
   }
-  
-  .post-content, 
-.reply-content {
-  color: #000000;
-  margin-bottom: 20px;
-}

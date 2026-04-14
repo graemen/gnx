@@ -1,5 +1,5 @@
 class ThemesController < ApplicationController
-  AVAILABLE_THEMES = %w[default retro soviet antiprism bluerush chemo fcukbook kovid].freeze
+  AVAILABLE_THEMES = %w[default soviet antiprism bluerush chemo fcukbook kovid].freeze
 
   def update
     theme = params[:theme]
