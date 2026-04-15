@@ -1,0 +1,18 @@
+<h1>Smileys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Smiley</th>
+      <th>Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @smileys.each do |code, filename| %>
+      <tr>
+        <td><img src="/smileys/<%= filename %>" alt="<%= h code %>"></td>
+        <td><code><%= code %></code></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

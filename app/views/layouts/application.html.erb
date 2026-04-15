@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "providing synthetic therapeutic virtual-chemical-combination therapy for the humans since before 2000AD " %></title>
+    <title><%= content_for(:title) || "gnx industries" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#008800">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Grixnix">
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon-dark-192.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag @current_theme, "data-turbo-track": "reload" %>
@@ -28,8 +30,6 @@
         <% theme_image = Pathname.new(theme_image).relative_path_from(Rails.root.join("public")).to_s %>
         <img src="/<%= theme_image %>" class="border">
       <% end %>
-
-
     </div>
 
     <div class="bar">

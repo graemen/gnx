@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   #patch "admin/posts/:id", to: "admin#update", as: :admin_update_post
   #delete "admin/posts/:id", to: "admin#destroy", as: :admin_destroy_post
 
+  get "smileys", to: "smileys#index"
+
   post "theme", to: "themes#update", as: :update_theme
 
   get "up" => "rails/health#show", as: :rails_health_check
